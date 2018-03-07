@@ -1,0 +1,60 @@
+.schedule {
+  background-color: #f6f5f1;
+  padding: 45px 0;
+
+  &__accordeon {
+    width: 80%;
+    margin: 10px auto;
+
+    .schedule__acc-head {
+      margin: 15px 0;
+      padding: 10px 10px 5px;
+      border: 2px solid #341f74;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .down:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: 35px;
+      width: 13px;
+      height: 9px;
+      background: url(../img/list-arrow-new_2.png) no-repeat;
+    }
+
+    .up:after {
+      transform: rotate(180deg);
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: 35px;
+      width: 13px;
+      height: 9px;
+      background: url(../img/list-arrow-new_2.png) no-repeat;
+    }
+
+    .schedule__acc-body {
+      padding: 10px;
+      margin-bottom: 5px;
+      display: none;
+    }
+  }
+}
+
+.schedule__title {
+  font-family: OpenSansBold, Arial, sans-serif;
+  font-size: 30px;
+  padding-left: 70px;
+  margin-top: 10px;
+}
+
+.schedule__category {
+  padding-top: 10px;
+  padding-left: 70px;
+  font-size: 14px;
+}
+

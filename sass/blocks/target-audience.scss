@@ -1,0 +1,39 @@
+.target-audience {
+  background-color: #2a252f;
+  &__wrap {
+    padding: 38px 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+
+    .target-audience__descr-left {
+      width: 40%;
+      padding-right: 20px;
+      line-height: 1.5;
+      font-size: 20px;
+    }
+
+    .target-audience__descr-ltext {
+      margin-top: 0;
+      i {
+        font-style: normal;
+        color: #69acc4;
+      }
+
+      span {
+        background-color: $h1-color;
+        color: black;
+        padding: 3px;
+      }
+    }
+
+    .target-audience__descr-right {
+      width: 60%;
+      p {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+    }
+  }
+}

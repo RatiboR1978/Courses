@@ -1,0 +1,50 @@
+.header {
+  background: url(../img/bg.jpeg) 50% no-repeat;
+  background-size: cover;
+  color: white;
+  padding-bottom: 120px;
+
+  h1 {
+    font-size: 36px;
+    color: $h1-color;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__period {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__slogan {
+    font-size: 18px;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    p {
+      text-align: center;
+    }
+    margin-bottom: 30px;
+  }
+
+  &__nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 70px;
+    nav {
+      margin: 30px 0;
+      a {
+        color: white;
+        padding: 5px 15px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,26 @@
+.advantages {
+  padding: 34px 0;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__item {
+  width: 45%;
+  margin-bottom: 3%;
+  padding-left: 5%;
+}
+
+.advantages__img {
+  width: 68px;
+  height: 68px;
+  float: left;
+}
+
+.advantages__text {
+  float: right;
+  width: 70%;
+}

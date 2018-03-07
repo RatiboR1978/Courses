@@ -1,0 +1,22 @@
+.descriptions {
+  padding: 38px 0;
+  &__item {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    position: relative;
+    h3, p {
+      margin-left: 160px;
+    }
+  }
+  &__item:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url(../img/svg/how_js-1.v2.svg) no-repeat;
+    top: 0;
+    left: 75px;
+  }
+}
