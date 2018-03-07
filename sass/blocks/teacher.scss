@@ -1,0 +1,48 @@
+.teacher {
+  background: url(../img/b-screen-6.jpg) 50% no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  &__wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 303px;
+    height: 313px;
+    background: url(../img/teacher_foto_8.jpg) no-repeat 50%;
+    position: relative;
+    margin-bottom: 35px;
+    box-shadow: 0 15px 30px 0 rgba(50,50,50,.5);
+    .teacher__text {
+      position: absolute;
+      color: white;
+      top: 55px;
+      left: 30px;
+      h3 {
+        font-size: 18px;
+        width: 100px;
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 15px;
+        color: #aab7c5;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__title-text {
+    font-size: 22px;
+    color: #aab7c5;
+    text-align: center;
+    margin-bottom: 115px;
+  }
+
+}
