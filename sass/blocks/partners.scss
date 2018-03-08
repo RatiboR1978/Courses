@@ -1,0 +1,22 @@
+.partners {
+  background-color: #eaf0f8;
+  padding-top: 50px;
+  padding-bottom: 110px;
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .partners__item {
+      width: 140px;
+      padding: 15px 31px;
+      filter: grayscale(100%);
+      transition: filter .15s;
+    }
+    .partners__item:hover {
+      filter: grayscale(0%);
+    }
+  }
+
+
+}

@@ -1,0 +1,174 @@
+.form {
+  background: url(../img/payment-fon.jpg) no-repeat 50%;
+  background-size: cover;
+  padding: 50px 0 100px;
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    .form__left {
+      padding: 38px 0 17px 38px;
+      background-color: #fff;
+      border-radius: 5px 0 0 5px;
+      width: 485px;
+      .form__list {
+        list-style: none;
+        padding: 0;
+        li {
+          position: relative;
+          font-size: 15px;
+          list-style: 25px;
+          line-height: 1.5;
+          margin-bottom: 5px;
+          margin-left: 30px;
+          color: #000;
+          padding-right: 20px;
+        }
+        li:before {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: -30px;
+          width: 12px;
+          height: 8px;
+          background: url(../img/book_sale-indoor-list.png) no-repeat;
+        }
+      }
+      .form__container-sale {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #e3e6e8;
+        margin-right: 42px;
+        .form__sale-text {
+          font-size: 15px;
+          color: #aab7c5;
+          width: 129px;
+          margin-right: 86px;
+          line-height: 1.5;
+        }
+        .form__rub {
+          font-size: 37px;
+          line-height: 37px;
+          position: relative;
+        }
+        .form__rub-m {
+          font-size: 18px;
+          line-height: 18px;
+          position: relative;
+          span {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .form__img {
+      position: absolute;
+      top: 0;
+      left: 124px;
+    }
+
+    .form__img-m {
+      position: absolute;
+      top: 0;
+      left: 50px;
+    }
+
+    .form__right {
+      width: 485px;
+      padding: 38px 0 0 38px;
+      background-color: #1c4459;
+      border-radius: 0 5px 5px 0;
+      label {
+        display: inline-block;
+        max-width: 80%;
+        margin-bottom: 5px;
+      }
+      .form__input {
+        width: 407px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        line-height: 71px;
+        text-indent: 35px;
+        color: #fff;
+        outline: none;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.form__name,
+.form__email,
+.form__company,
+.form__phone{
+  position: relative;
+}
+
+.form__company:before,
+.form__email:before,
+.form__phone:before,
+.form__name:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 26px;
+  width: 16px;
+  height: 16px;
+  opacity: .7;
+}
+
+.form__name:before {
+  background: url(../img/men_form.png) no-repeat;
+}
+
+.form__phone:before {
+  background: url(../img/phone_form.png) no-repeat;
+}
+
+.form__email:before {
+  background: url(../img/email_form.png) no-repeat;
+}
+
+.form__company:before {
+  background: url(../img/compan_form.png) no-repeat;
+}
+
+.form__checkbox-label {
+  position: relative;
+  display: block;
+  color: hsla(0,0%,100%,.5);
+  margin: 10px 0;
+  padding-left: 25px;
+  text-align: left;
+  line-height: 1.5;
+  input {
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+}
+
+.form__but {
+  font-size: 18px;
+  background-color: #81ba3c;
+  border-radius: 5px;
+  width: 85%;
+  padding: 20px 0;
+  border: 1px solid #81ba3c;
+  color: #fff;
+  text-transform: none;
+  margin: 50px 0 25px;
+  cursor: pointer;
+  outline: none;
+}
+
+.form__text {
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  opacity: .6;
+  margin-left: -68px;
+  text-align: center;
+}
