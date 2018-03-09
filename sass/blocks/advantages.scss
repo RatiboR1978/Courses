@@ -1,5 +1,8 @@
 .advantages {
-  padding: 34px 0;
+  padding: 20px 0;
+  @media (min-width: 700px) {
+    padding: 34px 0;
+  }
 
   &__wrap {
     display: flex;
@@ -9,15 +12,22 @@
 }
 
 .advantages__item {
-  width: 45%;
+  width: 250px;
   margin-bottom: 3%;
   padding-left: 5%;
+  @media (min-width: 700px) {
+    width: 45%;
+  }
 }
 
 .advantages__img {
-  width: 68px;
-  height: 68px;
+  width: 50px;
+  height: 50px;
   float: left;
+  @media (min-width: 700px) {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 .advantages__text {

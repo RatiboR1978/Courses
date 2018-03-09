@@ -1,6 +1,9 @@
 .schedule {
   background-color: #f6f5f1;
-  padding: 45px 0 95px;
+  padding: 17px 0 21px;
+  @media (min-width: 700px) {
+    padding: 45px 0 95px;
+  }
 
   &__accordeon {
     width: 80%;
@@ -18,11 +21,15 @@
       content: "";
       display: block;
       position: absolute;
-      top: 50px;
-      right: 35px;
+      top: 30px;
+      right: 20px;
       width: 13px;
       height: 9px;
       background: url(../img/list-arrow-new_2.png) no-repeat;
+      @media (min-width: 700px) {
+        top: 50px;
+        right: 35px;
+      }
     }
 
     .up:after {
@@ -30,11 +37,15 @@
       content: "";
       display: block;
       position: absolute;
-      top: 50px;
-      right: 35px;
+      top: 30px;
+      right: 20px;
       width: 13px;
       height: 9px;
       background: url(../img/list-arrow-new_2.png) no-repeat;
+      @media (min-width: 700px) {
+        top: 50px;
+        right: 35px;
+      }
     }
 
     .schedule__acc-body {
@@ -47,14 +58,20 @@
 
 .schedule__title {
   font-family: OpenSansBold, Arial, sans-serif;
-  font-size: 30px;
-  padding-left: 70px;
+  font-size: 15px;
+  padding-left: 35px;
   margin-top: 10px;
+  @media (min-width: 700px) {
+    font-size: 30px;
+    padding-left: 70px;
+  }
 }
 
 .schedule__category {
   padding-top: 10px;
-  padding-left: 70px;
-  font-size: 14px;
+  padding-left: 35px;
+  @media (min-width: 700px) {
+    padding-left: 70px;
+  }
 }
 

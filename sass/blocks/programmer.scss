@@ -1,7 +1,10 @@
 .programmer {
   background-color: #1a3a49;
   color: white;
-  padding: 25px 0 55px;
+  padding: 13px 0 21px;
+  @media (min-width: 700px) {
+    padding: 25px 0 55px;
+  }
 
   &__title {
     margin-bottom: 10px;

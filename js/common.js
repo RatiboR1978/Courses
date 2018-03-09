@@ -12,6 +12,34 @@ $(function () {
         $(this).toggleClass("up");
     }
 
+    /*Slick-slider
+    ==========================*/
+
+    $('.reviews__slider').slick({
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        adaptiveHeight: true
+    });
+
+    /* Гамбургер
+    =========================*/
+
+    $(".menu").on('click',function(){
+        var elem = $(this);
+        elem.find(".hambergerIcon").toggleClass("open");
+
+        elem.toggleClass('menu_btn_active');
+        if(elem.hasClass('menu_btn_active')) {
+            $('.header__menu-mob').slideDown(500);
+        } else {
+            $('.header__menu-mob').slideUp(500);
+        }
+    });
+
+
 
 });
 
