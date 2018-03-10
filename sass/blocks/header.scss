@@ -64,6 +64,12 @@
       a {
         color: white;
         padding: 5px 15px;
+        @media (min-width: 700px) {
+          font-size: 14px;
+        }
+      }
+      a:hover {
+        opacity: .8;
       }
     }
   }
@@ -87,6 +93,9 @@
       padding: 15px 0;
       transition-property: background-color;
       transition-duration: .5s;
+    }
+    a:hover {
+      opacity: .8;
     }
   }
 }

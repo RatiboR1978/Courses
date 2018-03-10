@@ -39,6 +39,19 @@ $(function () {
         }
     });
 
+    /*Menu - section - scroll
+     ========================*/
+
+    $('.header__menu-mob a, .header__menu a, .button').click(function (e) {
+        e.preventDefault();
+        var currentBlock = $(this).attr('href'),
+            body = $('html, body');
+        currentBlockOffset = $(currentBlock).offset().top;
+        body.animate({
+            scrollTop: currentBlockOffset
+        },500)
+    });
+
 
 
 });
