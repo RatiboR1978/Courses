@@ -4,6 +4,7 @@
 .header {
   background: url(../img/bg.jpeg) 50% no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
   padding-bottom: 40px;
   @media (min-width: 700px) {
@@ -27,7 +28,6 @@
   }
 
   &__slogan {
-    font-size: 18px;
     line-height: 26px;
     display: block;
     text-align: center;
