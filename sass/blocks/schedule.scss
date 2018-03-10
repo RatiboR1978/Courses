@@ -1,3 +1,6 @@
+/*Schedule
+==========================*/
+
 .schedule {
   background-color: #f6f5f1;
   padding: 17px 0 21px;
@@ -54,24 +57,28 @@
       display: none;
     }
   }
-}
 
-.schedule__title {
-  font-family: OpenSansBold, Arial, sans-serif;
-  font-size: 15px;
-  padding-left: 35px;
-  margin-top: 10px;
-  @media (min-width: 700px) {
-    font-size: 30px;
-    padding-left: 70px;
+  &__title {
+    font-family: OpenSansBold, Arial, sans-serif;
+    font-size: 15px;
+    padding-left: 35px;
+    margin-top: 10px;
+    @media (min-width: 700px) {
+      font-size: 30px;
+      padding-left: 70px;
+    }
+  }
+
+  &__category {
+    padding-top: 10px;
+    padding-left: 35px;
+    @media (min-width: 700px) {
+      padding-left: 70px;
+    }
   }
 }
 
-.schedule__category {
-  padding-top: 10px;
-  padding-left: 35px;
-  @media (min-width: 700px) {
-    padding-left: 70px;
-  }
-}
+
+
+
 

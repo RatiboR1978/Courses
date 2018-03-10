@@ -1,3 +1,6 @@
+/*Header
+==========================*/
+
 .header {
   background: url(../img/bg.jpeg) 50% no-repeat;
   background-size: cover;
@@ -33,6 +36,7 @@
   }
 
   &__logo {
+    margin-bottom: 30px;
     p {
       text-align: center;
     }
@@ -44,14 +48,12 @@
         height: 199px;
       }
     }
-    margin-bottom: 30px;
   }
 
   &__nav-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin-bottom: 70px;
     @media (min-width: 700px) {
       flex-direction: row;
@@ -67,58 +69,62 @@
         @media (min-width: 700px) {
           font-size: 14px;
         }
+        @media (min-width: 1200px) {
+          font-size: 16px;
+        }
+
+        &:hover {
+          opacity: .8;
+        }
       }
+    }
+  }
 
-      a:hover {
-        opacity: .8;
+  &__menu-mob {
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      border-bottom: 1px solid #36CBD4;
+      list-style-type: none;
+      text-align: center;
+      a {
+        display: block;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 15px 0;
+        transition-property: background-color;
+        transition-duration: .5s;
+
+        &:hover {
+          opacity: .8;
+        }
       }
     }
   }
-}
 
-.header__menu-mob {
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    border-bottom: 1px solid #36CBD4;
-    list-style-type: none;
-    text-align: center;
-    a {
-      display: block;
-      color: #fff;
-      font-weight: 600;
-      text-transform: uppercase;
-      cursor: pointer;
-      padding: 15px 0;
-      transition-property: background-color;
-      transition-duration: .5s;
-    }
-    a:hover {
-      opacity: .8;
-    }
-  }
-}
-
-.header__menu {
-  display: none;
-  @media (min-width: 700px) {
-    display: block;
-  }
-}
-
-.header__logo-mob {
-  font-size: 35px;
-  padding: 16px 20px 21px;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.header__wrap-mob {
-  width: 300px;
-  @media (min-width: 700px) {
+  &__menu {
     display: none;
+    @media (min-width: 700px) {
+      display: block;
+    }
+  }
+
+  &__logo-mob {
+    font-size: 35px;
+    padding: 16px 20px 21px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__wrap-mob {
+    width: 300px;
+    @media (min-width: 700px) {
+      display: none;
+    }
   }
 }
 
@@ -143,6 +149,7 @@
   background-color: white;
   transform: translate(-50%,-50%) rotate(0deg);
   transition: all ease 0.5s;
+
   &::before,&::after{
     content:"";
     position: absolute;
@@ -153,11 +160,13 @@
     width: 50%;
     transition: all ease 0.5s;
   }
+
   &::before{
     top: -10px;
     left: 0;
     transform-origin: left;
   }
+
   &::after{
     bottom:-10px;
     right: 0;
@@ -167,10 +176,12 @@
 
 .open{
   transform:translate(-50%,-50%) rotate(135deg);
+
   &::before{
     top:0;
     transform: translateX(100%) rotate(-90deg);
   }
+
   &::after{
     bottom:0;
     transform: translateX(-100%) rotate(-90deg);

@@ -1,3 +1,6 @@
+/*Partners
+==========================*/
+
 .partners {
   background-color: #eaf0f8;
   padding: 16px 0 22px;
@@ -9,23 +12,22 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-
     @media (min-width: 700px) {
       align-items: flex-start;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
     }
-    .partners__item {
-      width: 140px;
-      padding: 15px 31px;
-      filter: grayscale(100%);
-      transition: filter .15s;
-    }
-    .partners__item:hover {
+  }
+
+  &__item {
+    width: 140px;
+    padding: 15px 31px;
+    filter: grayscale(100%);
+    transition: filter .15s;
+
+    &:hover {
       filter: grayscale(0%);
     }
   }
-
-
 }

@@ -1,3 +1,6 @@
+/*Form
+==========================*/
+
 .form {
   background: url(../img/payment-fon.jpg) no-repeat 50%;
   background-size: cover;
@@ -126,98 +129,102 @@
       }
     }
   }
-}
 
-.form__name,
-.form__email,
-.form__company,
-.form__phone{
-  position: relative;
-}
-
-.form__company:before,
-.form__email:before,
-.form__phone:before,
-.form__name:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 19px;
-  width: 16px;
-  height: 16px;
-  opacity: .7;
-  @media (min-width: 700px) {
-    top: 26px;
+  &__name,
+  &__email,
+  &__company,
+  &__phone{
+    position: relative;
   }
-}
 
-.form__name:before {
-  background: url(../img/men_form.png) no-repeat;
-}
-
-.form__phone:before {
-  background: url(../img/phone_form.png) no-repeat;
-}
-
-.form__email:before {
-  background: url(../img/email_form.png) no-repeat;
-}
-
-.form__company:before {
-  background: url(../img/compan_form.png) no-repeat;
-}
-
-.form__checkbox-label {
-  position: relative;
-  display: block;
-  color: hsla(0,0%,100%,.5);
-  margin: 10px 0;
-  padding-left: 25px;
-  text-align: left;
-  line-height: 1.5;
-  input {
+  &__company:before,
+  &__email:before,
+  &__phone:before,
+  &__name:before {
+    content: "";
     position: absolute;
-    top: 6px;
     left: 0;
+    top: 19px;
+    width: 16px;
+    height: 16px;
+    opacity: .7;
+    @media (min-width: 700px) {
+      top: 26px;
+    }
+  }
+
+  .&__name:before {
+    background: url(../img/men_form.png) no-repeat;
+  }
+
+  .&__phone:before {
+    background: url(../img/phone_form.png) no-repeat;
+  }
+
+  .&__email:before {
+    background: url(../img/email_form.png) no-repeat;
+  }
+
+  .&__company:before {
+    background: url(../img/compan_form.png) no-repeat;
+  }
+
+  &__checkbox-label {
+    position: relative;
+    display: block;
+    color: hsla(0,0%,100%,.5);
+    margin: 10px 0;
+    padding-left: 25px;
+    text-align: left;
+    line-height: 1.5;
+    input {
+      position: absolute;
+      top: 6px;
+      left: 0;
+    }
+  }
+
+  &__but {
+    font-size: 18px;
+    background-color: #81ba3c;
+    border-radius: 5px;
+    width: 85%;
+    padding: 20px 0;
+    border: none;
+    color: #fff;
+    text-transform: none;
+    margin: 50px 15px 25px;
+    cursor: pointer;
+    outline: none;
+    transition-duration: 1s;
+    box-shadow: 0 15px 30px 0 rgba(0,0,0,.2);
+    @media (min-width: 700px) {
+      margin: 50px 0 25px;
+    }
+
+    &:hover {
+      background-color: #ff7f29;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    opacity: .6;
+    text-align: center;
+    margin-top: 0;
+    @media (min-width: 700px) {
+      margin-left: -68px;
+      font-size: 15px;
+      line-height: 20px;
+    }
   }
 }
 
-.form__but {
-  font-size: 18px;
-  background-color: #81ba3c;
-  border-radius: 5px;
-  width: 85%;
-  padding: 20px 0;
-  border: none;
-  color: #fff;
-  text-transform: none;
-  margin: 50px 15px 25px;
-  cursor: pointer;
-  outline: none;
-  transition-duration: 1s;
-  box-shadow: 0 15px 30px 0 rgba(0,0,0,.2);
-  @media (min-width: 700px) {
-    margin: 50px 0 25px;
-  }
-}
-
-.form__but:hover {
-  background-color: #ff7f29;
-
-}
 
 
 
-.form__text {
-  font-size: 12px;
-  line-height: 15px;
-  color: #fff;
-  opacity: .6;
-  text-align: center;
-  margin-top: 0;
-  @media (min-width: 700px) {
-    margin-left: -68px;
-    font-size: 15px;
-    line-height: 20px;
-  }
-}
+
+
+

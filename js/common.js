@@ -1,7 +1,7 @@
 $(function () {
 
-    //Accordeon
-    //==========================
+    /*Accordion
+    ==========================*/
 
     $('.schedule__accordeon .schedule__acc-head').on('click', f_acc);
 
@@ -24,7 +24,7 @@ $(function () {
         adaptiveHeight: true
     });
 
-    /* Гамбургер
+    /* Hamburger
     =========================*/
 
     $(".menu").on('click',function(){
